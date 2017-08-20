@@ -20,7 +20,7 @@ header .inner, #instructions .inner, #main, footer {width: 1000px; margin: 0 aut
     .answer {margin-top: 10px;}
     .prefix {font-weight: bold; color: red;}
     .questionContainer img {display: block; border: 1px solid #000;}
-    .sampleCode {border: 1px dashed #000; background: #FFFF7E; padding: 10px;}
+    .sampleCode {border: 1px dashed #000; background: #FFFF7E; padding: 10px; overflow: auto;}
         .sampleCode p:last-child {margin-bottom: 0;}
         .prettyprint {background-color: #fff; overflow: auto;}
 
