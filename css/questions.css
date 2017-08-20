@@ -3,6 +3,7 @@ h1, h2 {margin: 0; padding: 0;}
 p {padding: 0; margin-top: 0;}
 
 header .inner, #instructions .inner, #main, footer {width: 1000px; margin: 0 auto;}
+.header-name { float: right }
 #main, footer {border-left:2px solid #E4E4E4; border-right: 2px solid #E4E4E4;}
 #container header {background-color: #002E39; color: #000; border-bottom: 1px solid #000;}
 #container header h1 {background: url(../img/wb_logo.gif) no-repeat left center #002E39; padding: 10px 0 10px 130px; font-size: 15px; color: #fff; margin: 0;}
@@ -22,7 +23,7 @@ header .inner, #instructions .inner, #main, footer {width: 1000px; margin: 0 aut
         .sampleCode p:last-child {margin-bottom: 0;}
         .prettyprint {background-color: #fff; overflow: auto;}
 
-    
+
 /** Question Specific Styles **/
 #floatsWrappedByBox .sampleCode .col-1 {float: left; border: 1px dotted blue;}
 #floatsWrappedByBox .sampleCode .col-2 {float: left; border: 1px dotted green; margin-left: 5px;}
@@ -36,4 +37,3 @@ header .inner, #instructions .inner, #main, footer {width: 1000px; margin: 0 aut
 .hidden {display: none;}
 
 #mysteriousBox img {border: none;}
-
