@@ -29,14 +29,13 @@ header .inner, #instructions .inner, #main, footer {width: 1000px; margin: 0 aut
 #floatsWrappedByBox .sampleCode .col-1 {float: left; border: 1px dotted blue;}
 #floatsWrappedByBox .sampleCode .col-2 {float: left; border: 1px dotted green; margin-left: 5px;}
 
-#formStyling .sampleCode * {display: inline;}
-#formStyling .sampleCode label {display: inline;}
-#formStyling .sampleCode input {width: 500px; float: left;}
-#formStyling .sampleCode textarea {border-style: solid;}
+#formStyling .sampleCode {width: 335px;}
+#formStyling .sampleCode * {}
+#formStyling .sampleCode label {display: block;}
+#formStyling .sampleCode input {width: 295px; float: left;}
+#formStyling .sampleCode textarea {width: 295px; border-style: solid;}
 #formStyling .sampleCode a {float: right;}
 
 .hidden {display: none;}
 
 #mysteriousBox img {border: none;}
-
-a {text-decoration: none; color: #FF0000 !important;}
