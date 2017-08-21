@@ -414,9 +414,28 @@ console.log(d.orange);
                         <p><span class="prefix">Prompt:</span> For this final question create a prompt and answer it. Be creative and have fun.  If we like your question, maybe we'll use it in future tests.</p>
                     </div>
                     <div class="answer">
-                        <p><span class="prefix">Answer:</span></p>
+                      <p><span class="prefix">Prompt:</span>I love doing vanilla javascript exercises to get my day started. For this exercise, I will convert a binary number to its decimal equivalent using first principles.</p>
+                      <p><span class="prefix">Answer:</span></p>
+                      <script type="text/javascript">
+                        function Binary(num) {
+                          function toDecimal() {
+                            var l = num.length;
+                            var total = 0;
+                            var n = l - 1;
+                            for (var i = 0; i < l; i++) {
+                              var exp = num[i] * Math.pow(2, n);
+                              n = n - 1;
+                              total = total + exp;
+                            }
+                            return total;
+                          }
+                          return {
+                            toDecimal: toDecimal
+                          };
+                        }
+                      </script>
+                      <p>Running <code>new Binary("101").toDecimal()</code> in the console will return <strong>5</strong>. Give it a shot!</p>
 
-                        <p>What will the answer be?</p>
                     </div>
                 </li>
             </ol>
