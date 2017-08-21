@@ -191,6 +191,13 @@ var b = "abc";
                         <p><span class="prefix">Answer:</span></p>
 
                         <!--TODO - Begin Answer -->
+                        <p>
+                          <code>a = "abc"</code>  Is an Undeclared Variable. These are always global in scope. They do not exist until the code assigned to them is executed. They can be deleted.
+                        </p>
+                        <p>
+                          <code>var b = "abc"</code> Is a Declared Variable. They are local in scope and constrained in the execution context in which they are declared. They are created before any code is executed and are a non-configurable property of their execution context.
+                        </p>
+                        <p>It's recommended to always declare variables, no matter the scope it is being used in.  It's better because they can be constrained to their execution context, and it's created before any other code is executed. Undeclared variables can cause unexpected errors as well. </p>
 
                         <!-- End Answer -->
                     </div>
