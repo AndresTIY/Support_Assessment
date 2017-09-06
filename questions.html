@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Bazaarvoice Support Engineer Technical Assessment</title>
+    <title>[Company Name] Support Engineer Technical Assessment</title>
 
     <meta name="description" content="Technical Assessment given to Support Engineer Applicants">
-    <meta name="author" content="Bazaarvoice">
 
     <link type="text/css" rel="stylesheet" href="css/questions.css">
     <link type="text/css" rel="stylesheet" href="css/answers.css">
@@ -29,7 +28,7 @@
         <div id="instructions">
             <div class="inner">
                 <h2>Instructions</h2>
-                <p>Thank you for interviewing at Bazaarvoice! This document serves as the Bazaarvoice Technical Assessment for Support Engineers.  This is not a direct reflection of the position for which you are interviewing. The purpose of this assessment is to gauge your fluency of the core toolset our engineers use on a daily basis.</p>
+                <p>Thank you for interviewing at [Company Name] This document serves as the [Company Name] Technical Assessment for Support Engineers.  This is not a direct reflection of the position for which you are interviewing. The purpose of this assessment is to gauge your fluency of the core toolset our engineers use on a daily basis.</p>
                 <p>TIP: You may not be able to answer every question, so relax and do the best you can! The areas we measure on are skill knowledge, logic, and communication so even if you don't know how to write the code for a specific question, pseudo code or an explanation of your troubleshooting steps are better than leaving it blank.</p>
                 <p>Please follow these guidelines:</p>
                 <ul>
@@ -228,7 +227,7 @@ console.log(d.orange);
 
                 <li id="brokenBurtsBugs" class="questionContainer">
                     <div class="prompt">
-                        <p><span class="prefix">Prompt:</span> Bazaarvoice's clients include CSS files on their webpages that are hosted by Bazaarvoice.  Burt's Bugs has discovered that their site is broken due to the following line code in a Bazaarvoice CSS file.  Write a message to Jane, a non-technical manager at Burt's Bugs, explaining what is causing the issue and what Bazaarvoice is doing to fix it.</p>
+                        <p><span class="prefix">Prompt:</span> [Company Name]'s clients include CSS files on their webpages that are hosted by [Company Name].  Burt's Bugs has discovered that their site is broken due to the following line code in a [Company Name] CSS file.  Write a message to Jane, a non-technical manager at Burt's Bugs, explaining what is causing the issue and what [Company Name] is doing to fix it.</p>
                         <pre class="prettyprint">
                             a {text-decoration: none; color: #FF0000 !important;}
                         </pre>
@@ -348,8 +347,7 @@ console.log(d.orange);
 
                         <!--TODO - Begin Answer -->
                         <script type="text/javascript">
-
-                        $("p.special").hide();
+$("p.special").hide();
 </script>
 
                         <!-- End Answer -->
@@ -399,10 +397,10 @@ console.log(d.orange);
 
                         <!--TODO - Begin Answer -->
                         <script type="text/javascript">
-                        $("button").click(function(){
-                          $(".hidden").removeClass("hidden")
-                        })
-                        </script>
+                        $("button").click(function() {
+  $(".hidden").removeClass("hidden");
+});
+</script>
                         <!-- End Answer -->
                         <div class="hidden">Success! You got it right.</div>
                     </div>
@@ -417,23 +415,23 @@ console.log(d.orange);
                       <p><span class="prefix">Prompt:</span>I love doing vanilla javascript exercises to get my day started. For this exercise, I will convert a binary number to its decimal equivalent using first principles.</p>
                       <p><span class="prefix">Answer:</span></p>
                       <script type="text/javascript">
-                        function Binary(num) {
-                          function toDecimal() {
-                            var l = num.length;
-                            var total = 0;
-                            var n = l - 1;
-                            for (var i = 0; i < l; i++) {
-                              var exp = num[i] * Math.pow(2, n);
-                              n = n - 1;
-                              total = total + exp;
-                            }
-                            return total;
-                          }
-                          return {
-                            toDecimal: toDecimal
-                          };
-                        }
-                      </script>
+                      function Binary(num) {
+  function toDecimal() {
+    var l = num.length;
+    var total = 0;
+    var n = l - 1;
+    for (var i = 0; i < l; i++) {
+      var exp = num[i] * Math.pow(2, n);
+      n = n - 1;
+      total = total + exp;
+    }
+    return total;
+  }
+  return {
+    toDecimal: toDecimal
+  };
+}
+</script>
                       <p>Running <code>new Binary("101").toDecimal()</code> in the console will return <strong>5</strong>. Give it a shot!</p>
 
                     </div>
